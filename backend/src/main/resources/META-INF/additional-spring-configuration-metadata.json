@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "spring.ai.chat.model",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.ai.chat.model'"
+  },
+  {
+    "name": "spring.ai.embedding.model",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.ai.embedding.model'"
+  }
+]}
