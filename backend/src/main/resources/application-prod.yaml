@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: opendev
+
+  #Data Source Configs
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  #Hibernate Configs (prod)
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+
+  #OpenAI Configs
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+    chat:
+      model: gpt-4o-mini
+    embedding:
+      model: text-embedding-3-small
